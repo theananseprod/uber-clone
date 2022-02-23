@@ -1,4 +1,4 @@
-import { Image, SafeAreaView, StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import tw from 'tailwind-react-native-classnames'
 import FavOptions from '../components/FavOptions'
@@ -18,7 +18,7 @@ const MapScreen = () => {
     <View style={tw`bg-white`}>
         <TouchableOpacity
         style={tw`bg-gray-100 absolute top-16 left-8 z-50 p-6 rounded-full shadow-lg`}
-        onPress={() => navigator.navigate("HomeScreen")}
+        onPress={() => navigation.navigate("HomeScreen")}
         >
             <Entypo name="menu" size={24} color="black" />
         </TouchableOpacity>
@@ -36,14 +36,14 @@ const MapScreen = () => {
             <View style={tw`bg-gray-200 h-1`}></View>
             <View style={tw`flex-row bg-white mt-auto justify-evenly`}>
                 <TouchableOpacity 
-                //onPress={() => navigation.navigate("RidesScreen")}
-                style={tw`flex flex-row justify-between rounded-full w-30 m-4 p-4 bg-black`}>
+                //onPress={() => navigator.navigate("RidesScreen")}
+                style={tw`flex flex-row justify-between rounded-full w-40 p-4 m-4 bg-black`}>
                     <FontAwesome5 name="car" size={24} color="white" />
-                    <Text styles={tw`text-white text-center text-lg font-bold`}>Rides</Text>
+                    <Text style={tw`text-center text-white text-lg font-bold`}>Rides</Text>
                 </TouchableOpacity>
                 <TouchableOpacity 
-                //onPress={() => navigation.navigate("EatScreen")}
-                style={tw`flex flex-row justify-between rounded-full w-30 p-4 m-4`}>
+                onPress={() => navigation.navigate("EatsScreen")}
+                style={tw`flex flex-row justify-between rounded-full w-40 p-4 m-4`}>
                     <MaterialCommunityIcons name="silverware-fork-knife" size={24} color="black" />
                     <Text style={tw`text-center text-lg font-bold`}>Eats</Text>
                 </TouchableOpacity>

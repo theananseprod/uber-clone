@@ -16,7 +16,7 @@ export default function App() {
     //<Provider stores={store}>
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home">
+        <Stack.Navigator initialRouteName="HomeScreen">
           <Stack.Screen
             name="HomeScreen"
             component={HomeScreen}
@@ -31,13 +31,13 @@ export default function App() {
               headerShown: false,
             }}
           />
-          {/* <Stack.Screen
+          <Stack.Screen
             name="EatsScreen"
             component={EatsScreen}
             options={{
               headerShown: false,
             }}
-          /> */}
+          />
           {/* <Stack.Screen
             name="RidesScreen"
             component={RidesScreen}

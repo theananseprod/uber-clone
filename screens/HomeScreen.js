@@ -4,7 +4,6 @@ import { SafeAreaView } from 'react-native-web'
 import tw from 'tailwind-react-native-classnames'
 import NavOptions from '../components/NavOptions'
 import FavOptions from '../components/FavOptions'
-import { Entypo } from '@expo/vector-icons';
 
 const HomeScreen = () => {
   return (
