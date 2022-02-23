@@ -1,2 +1,2 @@
 # uber-clone
-a clone of the popular ride-sharing application; along with use of APIs from Google.
+a minimalist take on the popular ride-sharing application; front-end implementation.
